@@ -357,6 +357,65 @@ header{
     }
         }
 }
+.top__head{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    h3{
+        color: red;
+        border-bottom: 3px solid red;
+    }
+}
+.card__boxes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 75px;
+    .card__box{
+        border-radius: 10px;
+        img{
+        width: 450px;
+        }
+        h2{
+            color: rgb(37, 61, 78);
+            font-family: poppins;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 28.8px;
+            letter-spacing: 0%;
+            text-align: left;
+            width: 300px;
+            padding: 73px 0 0 50px;
+        }
+        button{
+            border-radius: 4px;
+            background: rgb(245, 62, 50);
+            color: rgb(255, 255, 255);
+            font-family: poppins;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 15.6px;
+            letter-spacing: 0.5px;
+            text-align: center;
+            padding: 8px 28px 9px 13px;
+            margin:195px 0 0 50px;
+            cursor: pointer;
+            transition: 0.5s;
+            &:hover{
+                color: rgb(255, 255, 255);
+                background: rgb(59, 183, 126);
+                transition: 0.5s;
+            }
+            &:active{
+                transform: scale(1.1);
+            }
+        }
+        h2, button{
+            position: absolute;
+        }
+        }
+}
 // responsive
 @media (max-width:920px) {
     nav .navbar {

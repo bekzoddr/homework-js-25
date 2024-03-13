@@ -388,6 +388,83 @@ header .navbar .bx-menu {
   transition: 0.5s;
 }
 
+.top__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+}
+.top__head h3 {
+  color: red;
+  border-bottom: 3px solid red;
+}
+
+.card__boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 75px;
+}
+.card__boxes .card__box {
+  border-radius: 10px;
+}
+.card__boxes .card__box img {
+  width: 450px;
+}
+.card__boxes .card__box h2 {
+  color: rgb(37, 61, 78);
+  font-family: poppins;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.8px;
+  letter-spacing: 0%;
+  text-align: left;
+  width: 300px;
+  padding: 73px 0 0 50px;
+}
+.card__boxes .card__box button {
+  border-radius: 4px;
+  background: rgb(245, 62, 50);
+  color: rgb(255, 255, 255);
+  font-family: poppins;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15.6px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  padding: 8px 28px 9px 13px;
+  margin: 195px 0 0 50px;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.card__boxes .card__box button:hover {
+  color: rgb(255, 255, 255);
+  background: rgb(59, 183, 126);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.card__boxes .card__box button:active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.card__boxes .card__box h2, .card__boxes .card__box button {
+  position: absolute;
+}
+
 @media (max-width: 920px) {
   nav .navbar {
     max-width: 100%;
