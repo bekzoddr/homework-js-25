@@ -1,0 +1,186 @@
+@use "_header";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    button{
+    border: none;
+    }
+}
+.container{
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.headline{
+    padding: 22.5px 312px;
+    background-color: rgb(245, 62, 50);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2{
+        color: rgb(255, 255, 255);
+            font-family: poppins;
+            font-size: 19px;
+            font-weight: 700;
+            line-height: 19px;
+            letter-spacing: 0.48px;
+            text-align: left;
+    }
+    .link{
+        display: flex;
+    }
+}
+main{
+    // display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    margin: 20px;
+    padding: 25px;
+    max-width: 306px;
+    border: 1px solid rgb(233, 233, 233);
+    border-radius: 5px;
+    background: rgb(247, 247, 248);
+   .title{
+    color: rgb(43, 43, 45);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25.6px;
+    letter-spacing: 0.48px;
+    text-align: left;
+    text-transform: capitalize;
+    margin-bottom: 28px;
+    border-bottom: 1px solid rgb(233, 233, 233);
+   } 
+   input{
+    width: 18px;
+    height: 18px;
+   }
+   .type{
+    display: flex;
+    gap: 3px;
+    // margin-top: 28px;
+    h3{
+        color: rgb(122, 122, 122);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0.48px;
+        text-align: left;
+        text-transform: capitalize;
+        margin-bottom: 10px;
+    }
+    .second{
+       flex-direction: column;
+       align-items: center;
+       margin-left:80px;
+    }
+   }
+   .tasks__2{
+    .type{
+        span{
+         content: " ";
+         width: 20px;
+         height: 20px;
+         border-radius: 5px;
+         color: transparent;
+        margin-left: 150px;
+        }
+        }
+.blue {
+        background-color: blue;
+    }
+
+    .yellow {
+        background-color: yellow;
+    }
+
+    .red {
+        background-color: red;
+    }
+
+    .green {
+        background-color: green;
+    }
+    }
+    .tasks__4 {
+        .type {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            flex-wrap: wrap;
+            button {
+                border: 1px solid rgb(233, 233, 233);
+                border-radius: 5px;
+                background: rgb(255, 255, 255);
+                padding:6px 16px;
+            }
+        }
+   }
+   .selector{
+    h2{
+        color: rgb(0, 0, 0);
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 18px;
+        letter-spacing: 0.48px;
+        text-align: left;
+        span{
+            color: rgb(122, 122, 122);
+        }
+    }
+    button{
+        box-sizing: border-box;
+        border: 1px solid rgb(245, 62, 50);
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        border-radius: 5px;
+        background: rgb(245, 62, 50);
+        padding: 12px 23px;
+        color: rgb(255, 255, 255);
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16.8px;
+        letter-spacing: 0%;
+        text-align: center;
+        text-transform: capitalize;
+        margin: 20px auto;
+    }
+   }
+.slider {
+    appearance: none;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    background: rgb(247, 247, 248);
+    box-shadow: 0px 0px 8px 0px rgba(51, 51, 51, 0.2);
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin-bottom: 20px;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: rgb(245, 62, 50);
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: rgb(245, 62, 50);
+    cursor: pointer;
+}
+}

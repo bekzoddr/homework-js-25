@@ -1,5 +1,5 @@
+@use "_header";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.cdnfonts.com/css/matter');
 * {
     margin: 0;
     padding: 0;
@@ -16,274 +16,6 @@
     margin-right: auto;
     padding-right: 20px;
     padding-left: 20px;
-}
-header{
-    nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            height: 70px;
-            z-index: 99;
-            box-shadow: 0px 0px 8px 0px rgba(51, 51, 51, 0.2);
-            background: rgb(255, 255, 255);
-        }
-    
-        .navbar {
-            height: 100%;
-            max-width: 1250px;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            margin: auto;
-            padding: 0 50px;
-        }
-    
-        .fa-phone {
-            h4 {
-                color: rgb(0, 0, 0);
-                font-family: Segoe UI;
-                font-size: 15px;
-                font-weight: 400;
-                line-height: 22.5px;
-                letter-spacing: 0.48px;
-                text-align: left;
-            }
-        }
-    
-        .logo-name {
-            color: rgb(0, 0, 0);
-            font-family: 'Matter', sans-serif;
-            font-size: 40px;
-            font-weight: 700;
-            line-height: 18.2px;
-            letter-spacing: 0.48px;
-            text-align: left;
-            text-decoration: none;
-        }
-    
-        nav .navbar .nav-links {
-            line-height: 70px;
-            height: 100%;
-        }
-    
-        .links {
-            display: flex;
-            margin-left: 240px;
-        }
-    
-        .fa-phone {
-            margin-left: 125px;
-        }
-    
-        .links li {
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            list-style: none;
-            padding: 0 14px;
-        }
-    
-        .links li a {
-            height: 100%;
-            text-decoration: none;
-            white-space: nowrap;
-            color: rgb(0, 0, 0);
-            font-family: Poppins;
-            font-size: 14px;
-            font-weight: 500;
-    
-            &:hover {
-                color: red;
-            }
-    
-        }
-    .links li:hover .htmlcss-arrow,
-        .links li:hover .js-arrow {
-            transform: rotate(180deg);
-        }
-    
-        nav .navbar .links li .arrow {
-            height: 100%;
-            width: 22px;
-            line-height: 70px;
-            text-align: center;
-            display: inline-block;
-            color: #000;
-            transition: all 0.3s ease;
-        }
-    
-        nav .navbar .links li .sub-menu {
-            position: absolute;
-            top: 70px;
-            left: 0;
-            line-height: 40px;
-            background: #ddd;
-            color: #000;
-            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-            border-radius: 0 0 4px 4px;
-            display: none;
-            z-index: 2;
-        }
-    
-        nav .navbar .links li:hover .htmlCss-sub-menu,
-        nav .navbar .links li:hover .js-sub-menu {
-            display: block;
-        }
-    
-        .navbar .links li .sub-menu li {
-            padding: 0 22px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        }
-    
-        .navbar .links li .sub-menu a {
-            color: #000;
-            font-size: 15px;
-            font-weight: 500;
-        }
-    
-        .navbar .links li .sub-menu .more-sub-menu {
-            position: absolute;
-            top: 0;
-            left: 100%;
-            border-radius: 0 4px 4px 4px;
-            z-index: 1;
-            display: none;
-        }
-    
-        .links li .sub-menu .more:hover .more-sub-menu {
-            display: block;
-        }
-    
-        .navbar .nav-links .sidebar-logo {
-            display: none;
-        }
-    
-        .navbar .bx-menu {
-            display: none;
-        }
-}
-.navbar__bottom{
-    display: flex;
-    box-sizing: border-box;
-    border-bottom: 1px solid rgb(233, 233, 233);
-    padding: 35px 50px;
-    gap: 30px;
-    justify-content: space-around;
-    .logo{
-        img{
-            position: relative;
-            top: 40px;
-            left: 15px;
-        }
-        a{
-            font-family: 'Matter', sans-serif;
-            font-weight: 800;
-            font-size: 24px;
-            color: #000;
-            line-height: 18.2px;
-            letter-spacing: 3.48px;
-        }
-    }
-    .search{
-        display: flex;
-        border: 1px solid rgb(100, 180, 150);
-        border-radius: 5px;
-        background: rgb(255, 255, 255);
-        margin-top: 55px;
-        input{
-            width: 360px;
-            padding:  12px 5px;
-        }
-  .select {
-      position: relative;
-      min-width: 200px;
-  }
-
-  .select svg {
-      position: absolute;
-      right: 12px;
-      top: calc(50% - 3px);
-      width: 10px;
-      height: 6px;
-      stroke-width: 2px;
-      stroke: #9098a9;
-      fill: none;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-      pointer-events: none;
-  }
-  .select select {
-      appearance: none;
-      padding: 2px 0px 22px ;
-      width: 100%;
-      background: #fff;
-      cursor: pointer;
-      font-family: inherit;
-      font-size: 16px;
-      transition: all 150ms ease;
-  }
-  .select select:required:invalid {
-      color: #5a667f;
-  }
-
-  .select select option {
-      color: #223254;
-  }
-
-  .select select option[value=""][disabled] {
-      display: none;
-  }
-
-  .select select:focus {
-      outline: none;
-      border-color: #07f;
-      box-shadow: 0 0 0 2px rgba(0, 119, 255, 0.2);
-  }
-
-  .select select:hover+svg {
-      stroke: #07f;
-  }
-
-  .sprites {
-      position: absolute;
-      width: 0;
-      height: 0;
-      pointer-events: none;
-      user-select: none;
-  }
-    }
-    .fa-magnifying-glass{
-    padding: 15px;
-    border-radius: 0px 5px 5px 0px;
-    background: rgb(245, 62, 50);   
-    color: #fff;}
-    .servises{
-        display: flex;
-        margin-top: 70px;
-        gap: 20px;
-    li{
-        display: flex;
-        gap: 5px;
-        transition: 0.5s ease-in-out;
-        &:hover{
-            color: red;
-            transition: 0.5s ease-in-out;
-        }
-
-     h4{
-        color: rgb(0, 0, 0);
-            font-family: Poppins;
-            font-size: 15px;
-            font-weight: 500;
-            line-height: 15px;
-            letter-spacing: 0.48px;
-            text-align: left;
-     }
-    }
-    }
 }
 .hero{
     display: flex;
@@ -415,6 +147,128 @@ header{
             position: absolute;
         }
         }
+}
+.product__cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 50px;
+    gap: 30px;
+        .product__card{
+        box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.05);  
+        border: 2px solid rgba(0, 0, 0, 0.05);      
+        width: 296px;
+        padding: 20px;
+        border-radius: 15px;
+        .image{
+            border-bottom:2px solid #ddd ;
+            width: 246px;
+            height: 246px;
+        }
+        .card__bottom{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .name, p{
+        color: rgb(173, 173, 173);
+        font-family: poppins;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0%;
+        text-align: left;
+        }
+        .title{
+        color: rgb(43, 43, 45);
+        font-family: Poppins;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.48px;
+        text-align: left;
+    overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        }
+        .rating{
+            display: flex;
+        }
+        .addres{
+            font-family: poppins;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0%;
+            text-align: left;
+            color: rgb(182, 182, 182);
+            margin-bottom: 5px;
+            span{
+                color: rgb(59, 183, 126);
+                margin-left: 5px;
+                transition: 0.5s all ease-in-out;
+                &:hover{
+                color: rgb(245, 62, 50);
+                transition: 0.5s all ease-in-out;
+                }
+            }
+        }
+        .price {
+            color: rgb(59, 183, 126);
+            font-family: poppins;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: 0%;
+            text-align: left;
+        span{
+            font-size: 14px;
+            color:rgb(173, 173, 173);
+            margin-left: 10px;
+        }
+        }
+        .check{
+        border-radius: 15px 0px 20px 0px;
+        background: rgb(247, 75, 129);
+        padding: 14px 40px 18px;
+        color: rgb(255, 255, 255);
+        font-family: poppins;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 12px;
+        letter-spacing: 0%;
+        text-align: left;
+        position: absolute;
+        }
+    
+         .cart {
+            display: flex;
+             border-radius: 4px;
+             background: rgb(245, 62, 50);
+             padding: 10px 20px;
+             color: #fff;
+             gap: 8px;
+            transition: 0.5s ease-in-out;
+             &:active{
+                transform: scale(1.2);
+                transition: 0.5s ease-in-out;
+             }
+            i{
+                margin-top: auto;
+                margin-bottom: auto;
+            }
+            h3{
+                color: rgb(255, 255, 255);
+                font-family: poppins;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 24px;
+                letter-spacing: 0%;
+                text-align: left;
+            }
+         }
+    }
+                
 }
 // responsive
 @media (max-width:920px) {

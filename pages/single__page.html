@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FoodTrove</title>
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css
@@ -13,9 +17,10 @@
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/index.min.css" />
+    <link rel="stylesheet" href="../css/single__page.min.css" />
   </head>
   <body>
+    <div class="loading">loading.....</div>
     <header>
       <div class="container">
         <nav>
@@ -123,82 +128,127 @@
         </div>
       </div>
     </header>
-    <div class="containerr">
-      <div class="hero">
-        <div class="headline">
-          <div class="top__head">
-            <h3>100%</h3>
-            <h2>Organic Vegetables</h2>
-          </div>
-          <h1>The best way to stuff your wallet.</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-            reiciendis beatae consequuntur.
-          </p>
-          <div class="search__part">
-            <input
-              class="search__input"
-              type="search"
-              placeholder="Your Email Address"
-              required="required"
-            />
-            <button type="submit">Subscribe</button>
-          </div>
-        </div>
-        <div class="buttons">
-          <button class="1">
-            <i class="fa-solid fa-xmark"></i>
-            <h3>Shopping</h3>
-          </button>
-          <button class="2">
-            <i class="fa-solid fa-xmark"></i>
-            <h3>Recips</h3>
-          </button>
-          <button class="3">
-            <i class="fa-solid fa-xmark"></i>
-            <h3>Kitchen</h3>
-          </button>
-          <button class="4">
-            <i class="fa-solid fa-xmark"></i>
-            <h3>News</h3>
-          </button>
-          <button class="5">
-            <i class="fa-solid fa-xmark"></i>
-            <h3>Food</h3>
-          </button>
-        </div>
+    <div class="headline">
+      <h2>Products</h2>
+      <div class="link">
+        <a href="../index.html"><h2>Home-</h2></a>
+        <a href="#" target="_self"><h2>Products</h2></a>
       </div>
     </div>
     <main>
       <section>
         <div class="container">
-          <div class="card__boxes">
-            <div class="card__box">
-              <h2>Everyday Fresh & Clean with Our Products</h2>
-              <button>Shop Now</button>
-              <img src="images/onion.svg" alt="onion" />
+          <div class="box">
+            <h1 class="title">product Category</h1>
+            <div class="tasks__1">
+              <div class="type">
+                <input type="checkbox" id="cbx" />
+                <h3>Juice & Drinks</h3>
+                <h3 class="second">[20]</h3>
+              </div>
+              <div class="type">
+                <input type="checkbox" id="cbx" />
+                <h3>Dairy & Milk</h3>
+                <h3 class="second"><pre>    [54]</pre></h3>
+              </div>
+              <div class="type">
+                <input type="checkbox" id="cbx" />
+                <h3>Snack & Spice</h3>
+                <h3 class="second">[64]</h3>
+              </div>
             </div>
-            <div class="card__box">
-              <h2>Make your Breakfast Healthy and Easy</h2>
-              <button>Shop Now</button>
-              <img src="images/yogurt.svg" alt="yogurt" />
+            <h1 class="title">Filter By Price</h1>
+            <div class="selector">
+              <div class="slidecontainer">
+                <input
+                  type="range"
+                  min="1"
+                  max="100"
+                  value="50"
+                  class="slider"
+                  id="myRange"
+                />
+              </div>
+              <h2>Price :<span>$20 - $250</span></h2>
+              <button>Filter</button>
             </div>
-            <div class="card__box">
-              <h2>The best Organic Products Online</h2>
-              <button>Shop Now</button>
-              <img src="images/vegetables.svg" alt="vegetables" />
+            <h1 class="title">product Category</h1>
+            <div class="tasks__2">
+              <div class="type">
+                <input type="checkbox" id="cbx" />
+                <h3>blue</h3>
+                <span class="blue">.</span>
+              </div>
+              <div class="type">
+                <input type="checkbox" id="cbx" />
+                <h3>yellow</h3>
+                <span class="yellow">.</span>
+              </div>
+              <div class="type">
+                <input type="checkbox" id="cbx" />
+                <h3>red</h3>
+                <span class="red">.</span>
+              </div>
+              <div class="type">
+                <input type="checkbox" id="cbx" />
+                <h3>green</h3>
+                <span class="green">.</span>
+              </div>
+            </div>
+            <h1 class="title">Weight</h1>
+            <div class="tasks__3">
+              <div class="type">
+                <input type="checkbox" id="cbx" />
+                <h3>2kg Pack</h3>
+              </div>
+              <div class="type">
+                <input type="checkbox" id="cbx" />
+                <h3>20kg Pack</h3>
+              </div>
+              <div class="type">
+                <input type="checkbox" id="cbx" />
+                <h3>30kg Pack</h3>
+              </div>
+            </div>
+            <h1 class="title">Products Tages</h1>
+            <div class="tasks__4">
+              <div class="type">
+                <button><h3>Vegetables</h3></button>
+                <button><h3>Juice</h3></button>
+                <button><h3>Food</h3></button>
+                <button><h3>Dry Fruits</h3></button>
+                <button><h3>Vegetables</h3></button>
+                <button><h3>Juice</h3></button>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section>
-        <div class="container col-3">
-          <div class="product__cards post-wrapper ">
-    
-          </div>
+      <section class="image">
+        <div class="left__image">
+          <img class="main__image" src="" alt="">
         </div>
       </section>
     </main>
-    <script src="js/main.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+      });
+      var swiper2 = new Swiper(".mySwiper2", {
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+      });
+    </script>
+    <script src="../js/single-page.js"></script>
   </body>
 </html>

@@ -1,0 +1,9 @@
+<svg width="54.000000" height="12.000000" viewBox="0 0 54 12" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs>
+		<pattern id="pattern_8336_5160" patternContentUnits="objectBoundingBox" width="1.000000" height="1.000000">
+			<use xlink:href="#image8336_516_0" transform="matrix(0.018519,0,0,0.083333,0,0)"/>
+		</pattern>
+		<image id="image8336_516_0" width="12.000000" height="24.000000" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAYCAYAAADOMhxqAAAABHNCSVQICAgIfAhkiAAAAU5JREFUOI2NktuNwjAQRe+MtwBKcCpYqGBNBeA0AB1AB6SDpYUtADlU4NABJaSEfK9iz34kZCPyUK4UyY85yox8gJHIw5zEGz12x4Nib3QUXGvgvAgIQAYATDiIN6tZQLzRRPhqtyswLu8QxcJ4ATSaby4lEzIOgseC4iYRDwKAX2/OivA9VUfAkwRb2hYVvQ5noFKZInltuqFpui3dH7wDFOGzV/TsEzWwHgACGAAVE47KFBsWJCL4ae/WeE/tzX7sodrzqXab3O/3k3NutGighnNOhxCuIrLMJRHJ2uXBOTfvUttG5xIzX94hyvPcxxg1FriklMo4hLDYpRhj49LtdjsT0aRLzPwUka219t+lGahM03TEJaKptnR/8A5g5mmX6nroUozRAKiUUsc0TTdElACNS8zcAR+9liyAYrfbVQBgrS0BHJ1zORF1f/wDNU+LhcZJ8b8AAAAASUVORK5CYII="/>
+	</defs>
+	<rect id="div.product-rating" y="-0.859863" width="54.000000" height="12.000000" fill="url(#pattern_8336_5160)" fill-opacity="5.000000"/>
+</svg>
