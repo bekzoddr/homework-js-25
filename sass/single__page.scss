@@ -10,6 +10,10 @@
     border: none;
     }
 }
+main{
+    display: flex;
+    margin: 50px;
+}
 .container{
     width: 1440px;
     margin-left: auto;
@@ -35,11 +39,6 @@
     .link{
         display: flex;
     }
-}
-main{
-    // display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .box{
     margin: 20px;
@@ -183,4 +182,14 @@ main{
     background: rgb(245, 62, 50);
     cursor: pointer;
 }
+}
+.image{
+    position: relative;
+    right: 1000px;
+    top: 20px;
+}
+.main__image{
+    width: 469px;
+    height: 469px;
+    border: 2px solid rgb(122, 122, 122);
 }
